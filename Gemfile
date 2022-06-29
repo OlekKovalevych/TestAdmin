@@ -36,9 +36,9 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 
 gem 'activeadmin', '~> 2.13', '>= 2.13.1'
-gem 'devise'
-gem 'pundit'
-gem 'sassc-rails'
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'pundit', '~> 2.2'
+gem 'sass-rails', '~> 6.0'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -47,13 +47,13 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'rubocop', '~> 1.31', '>= 1.31.1'
   gem 'web-console'
-  gem 'rubocop'
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
+  gem 'capybara', '~> 3.37', '>= 3.37.1'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
